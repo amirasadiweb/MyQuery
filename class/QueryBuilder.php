@@ -1,6 +1,7 @@
 <?php
-
-require __DIR__. '\\..\\'."/vendor/autoload.php";
+namespace Query;
+use MongoDB\Client;
+use MongoDB\BSON\ObjectID;
 class QueryBuilder
 {
     private $db;
@@ -10,23 +11,23 @@ class QueryBuilder
     /**
      * @return QueryBuilder
      */
-    public static function getInstance()
-    {
-        if (!isset(self::$instance)){
-            self::$instance = new self();
-        }
-        return self::$instance;
-
-    }
+//    public static function getInstance()
+//    {
+//        if (!isset(self::$instance)){
+//            self::$instance = new self();
+//        }
+//        return self::$instance;
+//
+//    }
 
 
     /**
      * QueryBuilder constructor.
      * @param $dbname
      */
-    private function __construct($dbname)
+    public function __construct($dbname)
     {
-        $this->db= new MongoDB\Client("mongodb://localhost:27017");
+        $this->db= new Client("mongodb://localhost:27017");
         $this->db=$this->db->$dbname;
         return $this->db;
     }
@@ -66,7 +67,7 @@ class QueryBuilder
      */
     public function delete($id)
     {
-        $this->collection->deleteOne(['_id' => new MongoDB\BSON\ObjectID($id)]);
+        $this->collection->deleteOne(['_id' => new ObjectID($id)]);
     }
 
     /**
@@ -97,11 +98,8 @@ class QueryBuilder
      */
     public function update($id,$cloumn,$newValue)
     {
-        $this->collection->updateOne(['_id' => new \MongoDB\BSON\ObjectID($id)],
+        $this->collection->updateOne(['_id' => new ObjectID($id)],
             ['$set' => [$cloumn => $newValue]]);
-
-
-
     }
 
 

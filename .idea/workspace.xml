@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9512c9de-4206-4e61-80a6-70d63c444e10" name="Default Changelist" comment="" />
+    <list default="true" id="9512c9de-4206-4e61-80a6-70d63c444e10" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/QueryBuilder.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +14,9 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/jean85/pretty-package-versions" />
@@ -19,6 +25,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jYz3UAouczlEVXewlY9ejfmWGP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\xampp\htdocs\mongo" />
     </key>
   </component>
@@ -51,29 +59,11 @@
       <option name="presentableId" value="Default" />
       <updated>1603995614170</updated>
       <workItem from="1603995615257" duration="30407000" />
-      <workItem from="1604121454022" duration="1613000" />
+      <workItem from="1604121454022" duration="8391000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="531" y="181" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604036468842">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="531" y="181" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604036468842" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1604064251825">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604064251825" />
-    <state x="513" y="87" key="NewPhpClassDialog" timestamp="1604036450989">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="513" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604036450989" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1603995879501">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603995879501" />
   </component>
 </project>
