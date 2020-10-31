@@ -1,13 +1,16 @@
 {
-    "name": "a.asadi/mongo",
-    "description": "This library will generate Query Builder for MongoDB.",
+    "name": "asadi/mongonew",
+    "description": "Query Builder For Mongo",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "a.asadi",
+            "name": "amir asadi",
             "email": "amirasadiweb@gmail.com"
         }
     ],
+    "autoload": {
+        "QueryBuilder\\" : "src/"
+    },
     "require": {}
 }
