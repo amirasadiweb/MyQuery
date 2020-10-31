@@ -14,5 +14,6 @@
             "Query\\" : "src/"
         }
     },
+    "minimum-stability": "dev",
     "require": {}
 }
