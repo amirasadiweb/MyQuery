@@ -10,7 +10,9 @@
         }
     ],
     "autoload": {
-        "Query\\" : "src/"
+        "psr-4": {
+            "Query\\" : "src/"
+        }
     },
     "require": {}
 }
