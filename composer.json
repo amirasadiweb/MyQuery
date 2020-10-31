@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "QueryBuilder\\" : "src/"
+        "Query\\" : "src/"
     },
     "require": {}
 }
