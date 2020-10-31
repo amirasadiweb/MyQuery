@@ -7,31 +7,45 @@ class QueryBuilder
     private $collection;
    // private static $instance;
 
-//--------------Singleton------------------
-//    public static function getInstance()
-//    {
-//        if (!isset(self::$instance)){
-//            self::$instance = new self();
-//        }
-//
-//        return self::$instance;
-//
-//    }
-//
-//-----------------------------------------
+    /**
+     * @return QueryBuilder
+     */
+    public static function getInstance()
+    {
+        if (!isset(self::$instance)){
+            self::$instance = new self();
+        }
+        return self::$instance;
 
-    public function __construct($dbname)
+    }
+
+
+    /**
+     * QueryBuilder constructor.
+     * @param $dbname
+     */
+    private function __construct($dbname)
     {
         $this->db= new MongoDB\Client("mongodb://localhost:27017");
         $this->db=$this->db->$dbname;
         return $this->db;
     }
 
+    /**
+     * @param $collection
+     * @return \MongoDB\Collection
+     */
+
     public function selCollection($collection)
     {
         $this->collection=$this->db->$collection;
         return $this->collection;
     }
+
+    /**
+     * @param $list
+     * $list is an array
+     */
 
     public function show($list)
     {
@@ -47,10 +61,20 @@ class QueryBuilder
 
     }
 
+    /**
+     * @param $id
+     */
     public function delete($id)
     {
         $this->collection->deleteOne(['_id' => new MongoDB\BSON\ObjectID($id)]);
     }
+
+    /**
+     * @param $name
+     * @param $company
+     * @param $country
+     * @param $email
+     */
 
     public function insert($name,$company,$country,$email)
     {
@@ -66,6 +90,11 @@ class QueryBuilder
         );
     }
 
+    /**
+     * @param $id
+     * @param $cloumn
+     * @param $newValue
+     */
     public function update($id,$cloumn,$newValue)
     {
         $this->collection->updateOne(['_id' => new \MongoDB\BSON\ObjectID($id)],
